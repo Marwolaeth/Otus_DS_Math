@@ -6,17 +6,22 @@ if (!require(polyMatrix)) {
 }
 library(polynom)
 library(polyMatrix)
+normalise <- function(x) {x / sqrt(sum(x^2))}
 
 (A <- matrix(c(4, 1, 1, -3, 2, 1, -3, 1, 2), nrow = 3))
 det(A)
 (e <- eigen(A))
 (d <- charpolynom(A))
 (lambdas <- solve(d))
+(d_prime <- polynomial(c(3, -4, 1)))
+solve(d_prime)
 setequal(zapsmall(e$values), zapsmall(lambdas))
 setdiff( zapsmall(e$values), zapsmall(lambdas))
 
 (A <- matrix(c(2, -1, 1, -1, 2, -1, 0, 0, 1), nrow = 3))
 det(A)
+# …
+A %*% c(1, -1, 1) # Cool
 
 (A <- matrix(c(5, 0, 0, -1, 4, -1, -1, -1, 4), nrow = 3))
 det(A)

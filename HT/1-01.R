@@ -3,6 +3,8 @@ devtools::install_github('yihui/tinytex', build = TRUE)
 tinytex::install_tinytex()
 tinytex:::install_yihui_pkgs()
 
+tinytex::parse_packages('HT/1-03.log')
+
 (M <- matrix(c(5, 3, 1, -5, -1, 7, 4, 3, -1), nrow = 3))
 (b <- c(0, 0, 0))
 solve(M, b)
