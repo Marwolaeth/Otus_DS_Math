@@ -57,14 +57,17 @@ A %*% v2
 apply(e$vectors, 2, embellish)
 rm(list = ls(pattern = '^v'))
 
-v_1 <- c(2, -1, 0)
-v_2 <- c(-1, -2, 5)
-v_3 <- c(1, 1, 0)
-(Q <- cbind(v_1, v_2, v_3))
+q_1 <- c(2, -1, 0)
+q_2 <- c(-1, -2, 5)
+q_3 <- c(1, 1, 0)
+(Q <- cbind(q_1, q_2, q_3))
 (Q_Inv <- solve(Q))
-Q %*% Q_Inv
+zapsmall(Q %*% Q_Inv)
 (L <- diag(e$values))
 Q %*% L
 (E <- Q %*% L %*% Q_Inv)
 E == A
 E - A
+
+A %*% Q
+Q %*% L
