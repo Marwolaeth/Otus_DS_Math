@@ -28,15 +28,15 @@ $A = \begin{pmatrix}4&-3&-3\\1&2&1\\1&1&2\end{pmatrix}$
 
 2)  $\begin{vmatrix}4-\lambda&-3&-3\\1&2-\lambda&1\\1&1&2-\lambda\end{vmatrix} = 0$
 
-  > $(4-\lambda)((2-\lambda)^2 - 1) - 1(-3(2-\lambda) - -3×1) + 1(-3×1 - -3(2-\lambda))=0\\$
-  >  $(4-\lambda)(4-4\lambda+\lambda^2-1)-(-6+3\lambda+3)+(-3-(-6+3\lambda))=0\\$
-  >  $(4-\lambda)(\lambda^2-4\lambda+3) - (3\lambda-3) + (-3\lambda+3) = 0\\$
-  >  $(4\lambda^2-16\lambda+12-\lambda^3+4\lambda^2-3\lambda)-3\lambda+3-3\lambda+3=0\\$
-  >  $-\lambda^3+8\lambda^2-25\lambda+18=0\\$
-  >  $\lambda^3-8\lambda^2+25\lambda-18=0\\$
-  >  $(\lambda-1)(\lambda^2-7\lambda+18)=0\\$
+  > $(4-\lambda)((2-\lambda)^2 - 1) - 1(-3(2-\lambda) - -3×1) + 1(-3×1 - -3(2-\lambda))=0\\*$
+  >  $(4-\lambda)(4-4\lambda+\lambda^2-1)-(-6+3\lambda+3)+(-3-(-6+3\lambda))=0\\*$
+  >  $(4-\lambda)(\lambda^2-4\lambda+3) - (3\lambda-3) + (-3\lambda+3) = 0\\*$
+  >  $(4\lambda^2-16\lambda+12-\lambda^3+4\lambda^2-3\lambda)-3\lambda+3-3\lambda+3=0\\*$
+  >  $-\lambda^3+8\lambda^2-25\lambda+18=0\\*$
+  >  $\lambda^3-8\lambda^2+25\lambda-18=0\\*$
+  >  $(\lambda-1)(\lambda^2-7\lambda+18)=0\\*$
     
-  > Тогда: $(\lambda-1)=0; \lambda_1=1\\$
+  > Тогда: $(\lambda-1)=0; \lambda_1=1\\*$
 
   > Уравнение ($\lambda^2-7\lambda+18=0$) не имеет действительных корней.
 
@@ -52,13 +52,15 @@ $A = \begin{pmatrix}2&-1&0\\-1&2&0\\1&-1&1\end{pmatrix}$
 
 2)  $\begin{vmatrix}2-\lambda&-1&0\\-1&2-\lambda&0\\1&-1&1-\lambda\end{vmatrix} = 0$
 
-  >  $(1-\lambda)((2-\lambda)^2 - (-1)^2)=0\\$
-  >  $(1-\lambda)((2-\lambda)^2 - 1)=0\\$
-  >  $(1-\lambda)(4-4\lambda+\lambda^2-1)=0\\$
-  >  $(1-\lambda)(\lambda^2-4\lambda+3)=0\\$
-  >  $(1-\lambda)((\lambda-3)(\lambda-1))=0\\$
+  > $(1-\lambda)((2-\lambda)^2 - (-1)^2)=0\\*$
+  > $(1-\lambda)((2-\lambda)^2 - 1)=0\\*$
+  > $(1-\lambda)(4-4\lambda+\lambda^2-1)=0\\*$
+  > $(1-\lambda)(\lambda^2-4\lambda+3)=0\\*$
+  > $(1-\lambda)((\lambda-1)(\lambda-3))=0\\*$
+  > $(\lambda^2-2\lambda+1)×(\lambda-3)=0\\*$
+  > $(\lambda-1)^2×(\lambda-3)=0\\*$
 
-  > Ответ: $\lambda_1=3$; $\lambda_2=1$
+  > Ответ: $\lambda_1=3$; $\lambda_2=1$; $\lambda_3=1$
 
 #### в)
 
@@ -70,14 +72,129 @@ $A = \begin{pmatrix}5&-1&-1\\0&4&-1\\0&-1&4\end{pmatrix}$
 
 2)  $\begin{vmatrix}5-\lambda&-1&-1\\0&4-\lambda&-1\\0&-1&4-\lambda\end{vmatrix} = 0$
 
-  >  $(5-\lambda)((4-\lambda)^2 - (-1)^2)=0\\$
-  >  $(5-\lambda)((4-\lambda)^2 - 1)=0\\$
-  >  $(5-\lambda)(16-8\lambda+\lambda^2-1)=0\\$
-  >  $(5-\lambda)(\lambda^2-8\lambda+15)=0\\$
-  >  $(5-\lambda)((\lambda-5)(\lambda-3))=0\\$
+  > $(5-\lambda)((4-\lambda)^2 - (-1)^2)=0\\*$
+  > $(5-\lambda)((4-\lambda)^2 - 1)=0\\*$
+  > $(5-\lambda)(16-8\lambda+\lambda^2-1)=0\\*$
+  > $(5-\lambda)(\lambda^2-8\lambda+15)=0\\*$
+  > $(5-\lambda)((\lambda-5)(\lambda-3))=0\\*$
+  > $(\lambda^2-10\lambda+25)(\lambda-3)=0\\*$
+  > $(\lambda-5)^2×(\lambda-3)=0\\*$
 
-  > Ответ: $\lambda_1=5$; $\lambda_2=3$
+  > Ответ: $\lambda_1=5$; $\lambda_2=5$; $\lambda_3=3$
 
 ## Задача 2
 
 Диагонализируйте следующие матрицы:
+
+#### а)
+
+$A = \begin{pmatrix}7&-4&-2\\-2&5&-2\\0&0&9\end{pmatrix}$
+
+**Ответ:**
+
+1) Собственные значения:
+
+$\begin{vmatrix}7-\lambda&-4&-2\\-2&5-\lambda&-2\\0&0&9-\lambda\end{vmatrix} = 0$
+
+  > $0 - 0 + (9-\lambda)((5-\lambda)(7-\lambda)-8)=0\\*$
+  > $(9-\lambda)(35-12\lambda+\lambda^2-8)=0\\*$
+  > $(9-\lambda)(\lambda^2-12\lambda+27)=0\\*$
+  > $(9-\lambda)((\lambda-9)(\lambda-3))=0\\*$
+  > $(\lambda^2-18\lambda+81)(\lambda-3)=0\\*$
+  > $(\lambda-9)^2(\lambda-3)=0\\*$
+  
+  > $\lambda_1=9$; $\lambda_2=9$; $\lambda_3=3$
+
+2) Собственные веторы:
+
+  > Для $\lambda=9$:
+
+$\begin{aligned}
+\begin{pmatrix}
+  -2 & -4 & -2 & \vrule & 0\\
+  -2 & -4 & -2 & \vrule & 0\\
+   0 &  0 &  0 & \vrule & 0
+\end{pmatrix}
+\xrightarrow[{(1) \leftarrow (1) \div -2}]{(2) \leftarrow (2) - (1)}
+\begin{pmatrix}
+  1 & 2 & 1 & \vrule & 0\\
+  0 & 0 & 0 & \vrule & 0\\
+  0 & 0 & 0 & \vrule & 0
+\end{pmatrix}
+\end{aligned}$
+
+  > Данному уравнению удовлетворяют векторы
+
+$\begin{aligned}
+v_1 = 
+\begin{pmatrix}
+  2\\
+  -1\\
+  0
+\end{pmatrix}
+\end{aligned}$
+и
+$\begin{aligned}
+v_2 = 
+\begin{pmatrix}
+  -1\\
+  -2\\
+  5
+\end{pmatrix}
+\end{aligned}$
+
+> Для $\lambda=3$:
+
+$\begin{aligned}
+\begin{pmatrix}
+  4  & -4 & -2 & \vrule & 0\\
+  -2 & 2  & -2 & \vrule & 0\\
+  0  &  0 &  6 & \vrule & 0
+\end{pmatrix}
+\xrightarrow[{(3) \leftarrow (3) \div 6}]{(1) \leftarrow (1) \div 4}
+\begin{pmatrix}
+  1 & -1 & -\frac{1}{2} & \vrule & 0\\
+  -2 & 2 & -2           & \vrule & 0\\
+  0 & 0  & 1            & \vrule & 0
+\end{pmatrix}
+\xrightarrow[{}]{(2) \leftarrow (2) + 2×(1)}
+\begin{pmatrix}
+  1 & -1 & -\frac{1}{2} & \vrule & 0\\
+  0 & 0  & -3           & \vrule & 0\\
+  0 & 0  & 1            & \vrule & 0
+\end{pmatrix}
+\xrightarrow[{}]{(2) \leftarrow (2) \div -3}\\
+\begin{pmatrix}
+  1 & -1 & -\frac{1}{2} & \vrule & 0\\
+  0 & 0  & 1            & \vrule & 0\\
+  0 & 0  & 1            & \vrule & 0
+\end{pmatrix}
+\xrightarrow[{(1) \leftarrow (1) + (2) \div 2}]{(3) \leftarrow (3) - (2)}
+\begin{pmatrix}
+  1 & -1 & 0 & \vrule & 0\\
+  0 & 0  & 1 & \vrule & 0\\
+  0 & 0  & 0 & \vrule & 0
+\end{pmatrix}
+\end{aligned}$
+
+  > Данному уравнению удовлетворяет вектор
+
+$\begin{aligned}
+v_3 = 
+\begin{pmatrix}
+  1\\
+  1\\
+  0
+\end{pmatrix}
+\end{aligned}$
+
+  > Собственный базис
+  $Q = \begin{pmatrix}
+    2  & -1 & 1 \\
+    -1 & -2 & 1\\
+    0  & 5  & 0
+  \end{pmatrix}$
+  
+  > Найдем $Q^{-1}$
+  
+  $Q \Lambda Q^{-1}$
