@@ -27,3 +27,21 @@ A %*% c(1, -1, 1) # Cool
 det(A)
 
 (A <- matrix(c(7, -2, 0, -4, 5, 0, -2, -2, 9), nrow = 3))
+
+(A <- matrix(c(3, 1, 1, 0, 2, -1, 0, -1, 2), nrow = 3))
+
+q_1 <- c(2, 1, 1)
+q_2 <- c(0, -2, 2)
+q_3 <- c(0, 1, 1)
+A %*% q_3
+(Q <- cbind(q_1, q_2, q_3))
+(Q_Inv <- solve(Q))
+zapsmall(Q %*% Q_Inv)
+(L <- diag(e$values))
+Q %*% L
+(E <- Q %*% L %*% Q_Inv)
+E == A
+E - A
+
+A %*% Q
+Q %*% L

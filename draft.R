@@ -71,3 +71,5 @@ E - A
 
 A %*% Q
 Q %*% L
+
+crossprod(q_1, q_3)
