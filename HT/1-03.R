@@ -4,6 +4,9 @@ if (!require(polynom)) {
 if (!require(polyMatrix)) {
   install.packages('polyMatrix', type = 'source', INSTALL_opts = '--byte-compile')
 }
+if (!require(pracma)) {
+  install.packages('pracma', type = 'source', INSTALL_opts = '--byte-compile')
+}
 library(polynom)
 library(polyMatrix)
 normalise <- function(x) {x / sqrt(sum(x^2))}
@@ -45,3 +48,8 @@ E - A
 
 A %*% Q
 Q %*% L
+
+pracma::cross(q_1, q_3) # == q_2
+(q_1 <- normalise(q_1))
+(q_2 <- normalise(q_2))
+(q_3 <- normalise(q_3))
