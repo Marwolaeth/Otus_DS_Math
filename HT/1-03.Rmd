@@ -96,8 +96,6 @@ $\begin{vmatrix}7-\lambda&-4&-2\\-2&5-\lambda&-2\\0&0&9-\lambda\end{vmatrix} = 0
   > $(9-\lambda)(35-12\lambda+\lambda^2-8)=0\\*$
   > $(9-\lambda)(\lambda^2-12\lambda+27)=0\\*$
   > $(9-\lambda)((\lambda-9)(\lambda-3))=0\\*$
-  > $(\lambda^2-18\lambda+81)(\lambda-3)=0\\*$
-  > $(\lambda-9)^2(\lambda-3)=0\\*$
   
   > $\lambda_1=9$; $\lambda_2=9$; $\lambda_3=3$
 
@@ -268,3 +266,149 @@ $\begin{aligned}
   0           &  0           &  \frac{1}{5}\\*
   \frac{1}{3} &  \frac{2}{3} & \frac{1}{3}
 \end{pmatrix}\]
+
+#### б)
+
+$A = \begin{pmatrix}3&0&0\\1&2&-1\\1&-1&2\end{pmatrix}$
+
+**Ответ:**
+
+1) Собственные значения:
+
+$\begin{vmatrix}3-\lambda&0&0\\1&2\lambda&-1\\1&-1&2-\lambda\end{vmatrix} = 0$
+
+  > $(3-\lambda)((2-\lambda)^2-1) - 0 + 0 =0\\*$
+  > $(3-\lambda)(4-4\lambda+\lambda^2-1)=0\\*$
+  > $(3-\lambda)(\lambda^2-4\lambda+3)=0\\*$
+  > $(3-\lambda)((\lambda-3)(\lambda-1))=0\\*$
+  
+  > $\lambda_1=3$; $\lambda_2=3$; $\lambda_3=1$
+
+2) Собственные веторы:
+
+  > Для $\lambda=3$:
+  
+$\begin{aligned}
+\begin{pmatrix}
+  0 &  0 &  0 & \vrule & 0\\*
+  1 & -1 & -1 & \vrule & 0\\*
+  1 & -1 & -1 & \vrule & 0
+\end{pmatrix}
+\xrightarrow[{}]{(1) \leftrightarrow (3)}
+\begin{pmatrix}
+  1 & -1 & -1 & \vrule & 0\\*
+  1 & -1 & -1 & \vrule & 0\\*
+  0 &  0 &  0 & \vrule & 0
+\end{pmatrix}
+\xrightarrow[{}]{(2) \leftarrow (2)-(1)}
+\begin{pmatrix}
+  1 & -1 & -1 & \vrule & 0\\*
+  0 &  0 &  0 & \vrule & 0\\*
+  0 &  0 &  0 & \vrule & 0
+\end{pmatrix}
+\end{aligned}$
+
+> Данному уравнению удовлетворяет множество векторов $\vec{v} = \begin{pmatrix}v_1\\v_2\\v_3\end{pmatrix} \in \mathbb{R^3}$, для котрых также верно $v_1 = v_2 + v_3$
+
+> Пусть
+
+$\begin{aligned}
+\vec{v_1} = \alpha
+\begin{pmatrix}
+  2\\*
+  1\\*
+  1
+\end{pmatrix}
+\end{aligned}, \alpha \in \mathbb{R}$
+
+> Для $\lambda=1$:
+  
+$\begin{aligned}
+\begin{pmatrix}
+  2 &  0 &  0 & \vrule & 0\\*
+  1 &  1 & -1 & \vrule & 0\\*
+  1 & -1 &  1 & \vrule & 0
+\end{pmatrix}
+\xrightarrow[{(3) \leftarrow (3)-(2)}]{(1) \leftarrow (1) \div 2}
+\begin{pmatrix}
+  1 &  0 &  0 & \vrule & 0\\*
+  1 &  1 & -1 & \vrule & 0\\*
+  0 & -2 &  2 & \vrule & 0
+\end{pmatrix}
+\xrightarrow[{}]{(2) \leftarrow (2)-(1)}
+\begin{pmatrix}
+  1 &  0 &  0 & \vrule & 0\\*
+  0 &  1 & -1 & \vrule & 0\\*
+  0 & -2 &  2 & \vrule & 0
+\end{pmatrix}\\
+\xrightarrow[{}]{(3) \leftarrow (3)+2\times(1)}
+\begin{pmatrix}
+  1 & 0 &  0 & \vrule & 0\\*
+  0 & 1 & -1 & \vrule & 0\\*
+  0 & 0 &  0 & \vrule & 0
+\end{pmatrix}
+\end{aligned}$
+
+> Данному уравнению удовлетворяет вектор
+
+$\begin{aligned}
+\vec{v_3} = \alpha
+\begin{pmatrix}
+  0\\*
+  1\\*
+  1
+\end{pmatrix}
+\end{aligned}, \alpha \in \mathbb{R}$
+
+> Воспользуемся тем, что $\vec{v_1} \in \mathbb{R^3}, \vec{v_3} \in \mathbb{R^3}$: найдем ортогональный им $\vec{v_2}$ как их векторное произведение: $\vec{v_2} = $\vec{v_1} \times $\vec{v_3}$
+
+$\begin{aligned}
+\begin{pmatrix}
+  2\\*
+  1\\*
+  1
+\end{pmatrix}
+\times
+\begin{pmatrix}
+  0\\*
+  1\\*
+  1
+\end{pmatrix} =
+\begin{pmatrix}
+  1×1-1×1\\*
+  1×0-2×1\\*
+  2×1-1×0
+\end{pmatrix} =
+\begin{pmatrix}
+  0\\*
+  -2\\*
+  2
+\end{pmatrix}
+\end{aligned}$
+
+> $\begin{pmatrix}0\\*-2\\*2\end{pmatrix}$ удовлетворяет уравнению $v_1 = v_2 + v_3$ (см. выше), т. е. также является собственным вектором $A$ с собственным значением 3:
+
+$\begin{aligned}
+\vec{v_2} = \alpha
+\begin{pmatrix}
+  0\\*
+  -2\\*
+  2
+\end{pmatrix}
+\end{aligned}, \alpha \in \mathbb{R}$
+
+> Собственный базис
+  $Q = \begin{pmatrix}
+    2 &  0 & 0 \\*
+    1 & -2 & 1\\*
+    1 &  2 & 1
+  \end{pmatrix}$
+  
+  > Диагональная матрица
+  $\Lambda = \begin{pmatrix}
+    3 & 0 & 0 \\*
+    0 & 3 & 0 \\*
+    0 & 0 & 1
+  \end{pmatrix}$
+  
+  > Найдем $Q^{-1}$

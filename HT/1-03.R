@@ -36,7 +36,7 @@ det(A)
 q_1 <- c(2, 1, 1)
 q_2 <- c(0, -2, 2)
 q_3 <- c(0, 1, 1)
-A %*% q_3
+A %*% q_1
 (Q <- cbind(q_1, q_2, q_3))
 (Q_Inv <- solve(Q))
 zapsmall(Q %*% Q_Inv)
@@ -49,7 +49,12 @@ E - A
 A %*% Q
 Q %*% L
 
-pracma::cross(q_1, q_3) # == q_2
+q_1 %*% q_2
+q_1 %*% q_3
+q_2 %*% q_3
+
+(q_2 <- pracma::cross(q_1, q_3)) # == q_2
+pracma::cross(q_3, q_1)
 (q_1 <- normalise(q_1))
 (q_2 <- normalise(q_2))
 (q_3 <- normalise(q_3))
