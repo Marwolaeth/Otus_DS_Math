@@ -117,25 +117,64 @@ $\begin{aligned}
 \end{pmatrix}
 \end{aligned}$
 
-  > Данному уравнению удовлетворяют векторы
+  > Запишем фундаментальную систему решений:
+  
+\[\begin{aligned}
+\begin{pmatrix}
+  x_1\\*
+  x_2\\*
+  x_3
+\end{pmatrix} = \alpha_1
+\begin{pmatrix}
+  -2\\*
+  1\\*
+  0
+\end{pmatrix} + \alpha_2
+\begin{pmatrix}
+  -1\\*
+  0\\*
+  1
+\end{pmatrix}
+\end{aligned}, \alpha_1 \in \mathbb{R}, \alpha_2 \in \mathbb{R}\]
 
-$\begin{aligned}
-\vec{v_1} = \alpha
+ > Пусть
+
+\[\begin{aligned}
+\vec{v_1} = -1
+\begin{pmatrix}
+  -2\\*
+  1\\*
+  0
+\end{pmatrix} + 0
+\begin{pmatrix}
+  -1\\*
+  0\\*
+  1
+\end{pmatrix} =
 \begin{pmatrix}
   2\\*
   -1\\*
   0
 \end{pmatrix}
-\end{aligned}, \alpha \in \mathbb{R}$
-и
-$\begin{aligned}
-\vec{v_2} = \alpha
+\end{aligned},\]
+\[\begin{aligned}
+\vec{v_2} = 0
+\begin{pmatrix}
+  -2\\*
+  1\\*
+  0
+\end{pmatrix} + 1
 \begin{pmatrix}
   -1\\*
-  -2\\*
-  5
+  0\\*
+  1
+\end{pmatrix} =
+\begin{pmatrix}
+  -1\\*
+  0\\*
+  1
 \end{pmatrix}
-\end{aligned}, \alpha \in \mathbb{R}$
+\end{aligned}\]
 
 > Для $\lambda=3$:
 
