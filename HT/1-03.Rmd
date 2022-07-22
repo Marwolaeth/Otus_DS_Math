@@ -210,22 +210,26 @@ $\begin{aligned}
 \end{pmatrix}
 \end{aligned}$
 
-  > Данному уравнению удовлетворяет вектор
-
-$\begin{aligned}
-\vec{v_3} = \alpha
+  > Запишем фундаментальную систему решений:
+  
+\[\begin{aligned}
+\begin{pmatrix}
+  x_1\\*
+  x_2\\*
+  x_3
+\end{pmatrix} = \alpha_1
 \begin{pmatrix}
   1\\*
   1\\*
   0
 \end{pmatrix}
-\end{aligned}, \alpha \in \mathbb{R}$
+\end{aligned}, \alpha_1 \in \mathbb{R}\]
 
   > Собственный базис
   $Q = \begin{pmatrix}
     2  & -1 & 1 \\*
-    -1 & -2 & 1\\*
-    0  & 5  & 0
+    -1 & 0  & 1\\*
+    0  & 1  & 0
   \end{pmatrix}$
   
   > Диагональная матрица
@@ -240,14 +244,14 @@ $\begin{aligned}
 \[\begin{aligned}
 \begin{pmatrix}
   2  & -1 & 1 & \vrule & 1 & 0 & 0\\*
-  -1 & -2 & 1 & \vrule & 0 & 1 & 0\\*
-  0  &  5 & 0 & \vrule & 0 & 0 & 1
+  -1 &  0 & 1 & \vrule & 0 & 1 & 0\\*
+  0  &  1 & 0 & \vrule & 0 & 0 & 1
 \end{pmatrix}
-\xrightarrow[{(3) \leftrightarrow (2)}]{(1) \leftarrow (1) \div 2}
+\xrightarrow[{(3) \leftrightarrow (2)}]{(1) \leftrightarrow (3)}
 \begin{pmatrix}
-  1  & -\frac{1}{2} & \frac{1}{2} & \vrule & \frac{1}{2} & 0 & 0\\*
-  0  &  5 & 0 & \vrule & 0 & 0 & 1\\*
-  -1 & -2 & 1 & \vrule & 0 & 1 & 0
+  2  & -1 & 1 & \vrule & 1 & 0 & 0\\*
+  -1 &  0 & 1 & \vrule & 0 & 1 & 0\\*
+  0  &  1 & 0 & \vrule & 0 & 0 & 1
 \end{pmatrix}
 \xrightarrow[{}]{(3) \leftarrow (3) + (1)}
 \begin{pmatrix}
